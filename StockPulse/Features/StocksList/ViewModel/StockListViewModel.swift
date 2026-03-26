@@ -50,8 +50,7 @@ final class StockListViewModel: ObservableObject {
         
         timer = Timer.scheduledTimer(withTimeInterval: 8.0, repeats: true) { [weak self] _ in
             Task {
-                print("timer called")
-//                await self?.fetchStocks()
+                await self?.fetchStocks()
             }
         }
     }
